@@ -2,11 +2,12 @@ import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
 
-const Hero = () => {
+const Hero = ({ observedSection }) => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col scroll-mt-96 ${styles.paddingY}`}
+      ref={observedSection}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
